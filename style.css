@@ -14,26 +14,39 @@ p {
 }
 
 .container {
-	width: 600px;
+	width: 80%;
 	margin: 0 auto;
 	overflow: hidden;
 }
 
 /* header */
 #header {
-	
+		
 }
 
-#header h1 {
+#header .title-area {
+	padding: 10px 0;
+}
+
+#header img {
+	width: 200px;
+	height: auto;
+}
+
+#header .title-area h1 {
 	font-weight: bold;
 	font-size: 18px;
 	padding: 15px 0;
 }
 
+#header .title-area h1 a {
+	color: #000000;
+}
+
 #header .menu {
-	background: #f39800;
+	background: #fff;
 	margin-bottom: 30px;
-	font-size: 12px;
+	font-size: 14px;
 	list-style: none;
 	overflow: hidden;
 	padding: 0;
@@ -41,56 +54,123 @@ p {
 
 #header .menu li {
 	float: left;
-	width: 150px;
-	text-align: center;
+	text-align: left;
+	padding: 5px 0px 5px 30px;
+}
+
+#header .menu li:first-child {
+	padding-left: 0px;
 }
 
 #header .menu a{
 	padding: 10px 0;
-	color: #fff;
+	color: #696969;
 	display: block;
 }
 
 #header a:hover {
-	background: #ffc35c;
+	color: #000000;
+}
+
+/* header-change */
+#header-change {
+	display: flex;
+  justify-content: space-between;
+	background: #fff;
+  padding: 0px 20px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+	z-index: 1;
+	display: none;
+}
+
+.container-header-change {
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#header-change.show-border {
+	border-bottom: 1px solid #dcdcdc; 
+}
+
+
+#header-change .logo-area {
+	padding: 10px 0;
+	text-align: center;
+}
+#header-change img {
+	width: 200px;
+	height: auto;
 }
 
 /* posts */
 #posts {
 	float: left;
-	width: 435px;
+	width: 70% 
 }
 
 #posts .post {
 	margin-bottom: 30px;
 }
 
-#posts .post-header {
-	margin-bottom: 15px;
+#posts .post-thumbnail {
+	width: 95%;
+	padding: 10px 2.5%;
+	text-align: center;
 }
 
-#posts .post-header h2 {
-	font-size: 16px;
+#posts .post-thumbnail .thumbnail {
+	background-size: cover;
+	background-position: center center;
+	padding-top: 56.25%;
+	width: 100%;
+}
+
+#posts .post-title {
+
+}
+
+#posts .post-title h2 {
+	font-size: 24px;
 	font-weight: bold;
+	margin: 10px 2.5%;
+	text-decoration: none;
+}
+
+#posts .post-title a {
+
 }
 
 #posts .post-meta {
 	font-size: 12px;
 	padding: 7px 0;
 	color: #555;
+	margin: 5px 2.5%;
 }
 
 #posts .post-content {
 	overflow: hidden;
+	font-size: 14px;
+	color: black;
+	margin: 0px 2.5%;
 }
 
-#posts .post-image {
-	float: left;
-	width: 115px;
+#posts .border-btm {
+	width: 95%;
+	margin: 0 2.5%;
+	border-bottom: 1px solid #dcdcdc;
 }
 
-#posts .post-body {
-	margin-left: 115px;
+.font-black {
+	color: black;
+	transition: 0.15s;
+}
+
+.change-to-green {
+	transition: 0.15s;
+	color: #32cd32;
 }
 
 /* navigation */
@@ -138,5 +218,3 @@ p {
 	color: #aaa;
 	border-top: 1px solid #ccc;
 }
-
-
