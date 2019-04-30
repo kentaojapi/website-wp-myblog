@@ -101,7 +101,7 @@ p {
 	text-align: center;
 }
 #header-change img {
-	width: 200px;
+	width: 150px;
 	height: auto;
 }
 
@@ -126,6 +126,12 @@ p {
 	background-position: center center;
 	padding-top: 56.25%;
 	width: 100%;
+}
+
+#posts .post-thumbnail .thumnail-uline {
+	width: 0;
+	height: 5px;
+	background: #00a381;
 }
 
 #posts .post-title {
@@ -170,7 +176,7 @@ p {
 
 .change-to-green {
 	transition: 0.15s;
-	color: #32cd32;
+	color: #00a381;
 }
 
 /* navigation */
@@ -213,8 +219,76 @@ p {
 
 /* footer */
 #footer {
+	height: 200px
 	padding: 15px 0;
-	font-size: 12px;
-	color: #aaa;
+	background: #323232;
+	color: #aeaeae;
 	border-top: 1px solid #ccc;
+}
+
+.container-footer {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#about-blog {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+
+#about-blog h2 {
+	font-size: 20px;
+	margin: 30px 0px 20px 0px;
+}
+
+.about-border {
+	border-top: 3px solid #aeaeae;
+	margin: 15px 0px;
+	width: 100px;
+}
+
+#about-me {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+
+#about-me h2 {
+	font-size: 20px;
+	margin: 30px 0px 20px 0px;
+}
+
+.sns {
+	padding-bottom: 15px;
+}
+
+.about-me-icon {
+	font-size: 20px;
+	padding-right: 5%;
+}
+
+#about-me a {
+	font-size: 14px;
+	color: #aeaeae;	
+}
+
+#end-logo {
+	float: left;
+	width: 30%;
+}
+
+#end-logo .end-logo-img {
+	width: 80%;
+	text-align: center;
+	padding: 100px 10%;
+	text-align: center;
+}
+
+#copyright {
+	clear: both;
+	font-size: 9px;
+	text-align: center;
+	padding: 15px 0;
 }

@@ -1,35 +1,21 @@
 /* change the color of article title */ 
 $(document).ready(function () {
+	linelength = $('.thumbnail').width();
+	$line = $('.thumnail-uline');
+	speed = 200;
 	$(".post").hover(
 	  function () {
 	    $(".post-title a, .post-content p").removeClass('font-black').addClass('change-to-green');
+			$line.animate({width: linelength}, speed);
 	  },
 		function() {
 			$(".post-title a, .post-content p").removeClass("change-to-green").addClass('font-black');
+			$line.animate({width: 0}, speed);
 		}
 	);
 });
 
 /* change header */
-/*$(function() {
-	var _window = $(window),
-	    _header = $('#header'),
-	    headerChange = $('#header-change'),
-	    headerBottom;
-	
-	_window.on('scroll',function(){
-	    headerBottom = $('#header').height();
-	    if(_window.scrollTop() > headerBottom){
-	        headerChange.addClass('show');
-	    }
-	    else{
-	        headerChange.removeClass('show');
-	    }
-	});
-	
-	_window.trigger('scroll');
-});*/
-
 $(function() {
   var $window = $(window),
       $clone = $('#header-change'),
