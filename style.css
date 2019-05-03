@@ -1,3 +1,62 @@
+/*
+ * Theme Name: Ojapi Monodukuri Blog
+ * Theme URI: 
+ * Author: Kenta Ojapi
+ * Author URI: http://works.kentajapi.info/
+ * Description: My blog theme.
+ * Version: 1.0
+ * License: GNU General Public License v2 or later
+ * Tags:
+ * Text Domain: ojapimonodukuri
+ * */
+
+/* Reset CSS
+ * http://meyerweb.com/eric/tools/css/reset/ 
+ *    v2.0 | 20110126
+ *       License: none (public domain)
+ *       */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+		display: block;
+}
+blockquote, q {
+	/*quotes: none;*/
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+ * Main CSS
+ */
+
 body {
 	font-size: 14px;
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
@@ -100,6 +159,7 @@ p {
 	padding: 10px 0;
 	text-align: center;
 }
+
 #header-change img {
 	width: 150px;
 	height: auto;
@@ -115,6 +175,10 @@ p {
 	margin-bottom: 30px;
 }
 
+#posts .post-single {
+	margin-bottom: 30px;
+}
+
 #posts .post-thumbnail {
 	width: 95%;
 	padding: 10px 2.5%;
@@ -122,11 +186,22 @@ p {
 }
 
 #posts .post-thumbnail .thumbnail {
+	position: relative;
 	background-size: cover;
 	background-position: center center;
 	padding-top: 56.25%;
 	width: 100%;
 }
+
+#posts .post-thumbnail .thumbnail .permalink {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 
 #posts .post-thumbnail .thumnail-uline {
 	width: 0;
@@ -149,14 +224,38 @@ p {
 
 }
 
+#posts .post-title p {
+	padding-bottom: 0px;
+}
+
 #posts .post-meta {
+	display: block;
+	height: 18px;
+	float: left;
 	font-size: 12px;
-	padding: 7px 0;
-	color: #555;
+	color: #696969;
 	margin: 5px 2.5%;
 }
 
+#posts .post-category {
+	display: block;
+	height: 18px;
+	float: left;
+	font-size: 12px;
+	color: #696969;
+	margin: 5px 0;
+}
+
+#posts .post-category a {
+	color: #696969;
+}
+
+#posts .post-category a:hover {
+	color: #000000;
+}
+
 #posts .post-content {
+	clear: both;
 	overflow: hidden;
 	font-size: 14px;
 	color: black;
@@ -169,6 +268,11 @@ p {
 	border-bottom: 1px solid #dcdcdc;
 }
 
+#posts > div.post:last-child > div.border-btm {
+	display: none;
+}
+
+
 .font-black {
 	color: black;
 	transition: 0.15s;
@@ -179,6 +283,94 @@ p {
 	color: #00a381;
 }
 
+/* post-content(single.php) */
+
+.post-content {
+
+}
+
+.post-content p {
+	font-size: 1.15em;
+}
+
+.post-content p strong {
+	font-weight: bold;
+}
+
+.post-content ol {
+	display: list-item;
+	font-size: 1.15em;
+	list-style-type: disc;
+	padding-left: 3em;
+}
+
+.post-content li {
+
+}
+
+.post-content h1 {
+	font-size: 1.9em;
+	font-weight: bold;
+}
+
+.post-content h2 {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+.post-content h3 {
+	font-size: 1.45em;
+	font-weight: bold;
+}
+
+.post-content ul {
+	display: list-item;
+	font-size: 1.15em;
+	list-style-type: decimal;
+	padding-left: 3em;
+}
+
+.post-content blockquote {
+	position: relative;
+	padding: 10px 15px 10px 60px;
+	box-sizing: border-box;
+	font-style: italic;
+	background: #efefef; 
+	color: #555;
+}
+
+.post-content blockquote:before {
+	display: inline-block;
+	position: absolute;
+	top: 18px;
+	left: 15px;
+	content: "\f10d";
+	font-family: "Font Awesome 5 Free";
+	color: #cfcfcf;
+	font-size: 30px;
+	line-height: 1;
+	font-weight: 900;
+}
+
+.post-content blockquote p {
+	padding: 0;
+	margin: 10px 0;
+	line-height: 1.7;
+}
+
+.post-content blockquote cite {
+	display: block;
+	text-align: right;
+	color: #888888;
+	font-size: 0.9em;
+}
+
+.post-content .lkc-title-text {
+	margin-top : 50px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
 /* navigation */
 .navigation {
 	overflow: hidden;
@@ -187,25 +379,55 @@ p {
 	margin-bottom: 15px;
 }
 
-.navigation .prev {
+.navigation .prev-link {
+  display: flex;
+	justify-content: center;
+	align-items: center;
 	float: left;
-	width: 200px;
+	width: 150px;
+	height: 50px;
+	margin-left: 2.5%;
+	border: 1px solid #696969;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #696969;
 }
 
-.navigation .next {
+.navigation .prev-link:hover {
+	border: 1px solid #000000;
+	color: #000000;
+}
+
+.navigation .next-link {
+  display: flex;
+	justify-content: center;
+	align-items: center;
 	float: right;
-	width: 200px;
-	text-align: right;
+	width: 150px;
+	height: 50px;
+	margin-right: 2.5%;
+	border: 1px solid #696969;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #696969;
+}
+
+.navigation .next-link:hover {
+	border: 1px solid #000000;
+	color: #000000;
 }
 
 /* sidebar */
 #sidebar {
 	float: right;
-	width: 150px;
+	width: 20%;
+	height: auto;
 }
 
 #sidebar .widget {
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 }
 
 #sidebar .widget li {
@@ -213,8 +435,27 @@ p {
 }
 
 #sidebar .widget h3 {
-	font-weight: bold;
-	padding-bottom: 7px;
+	background: none;
+	padding: 0;
+	font-size: 20px;
+	color: black;
+}
+
+#sidebar h3:after {
+	content: "";
+	display: block;
+	height: 7px;
+	width: 30%;
+	margin: 15px 0px 20px 0px;
+	background: black; 
+}
+
+#sidebar li a {
+	color: #696969;
+}
+
+#sidebar li a:hover {
+	color: #000000;
 }
 
 /* footer */
@@ -292,3 +533,4 @@ p {
 	text-align: center;
 	padding: 15px 0;
 }
+

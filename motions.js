@@ -1,19 +1,21 @@
 /* change the color of article title */ 
-$(document).ready(function () {
+$(function () {
 	linelength = $('.thumbnail').width();
-	$line = $('.thumnail-uline');
-	speed = 200;
-	$(".post").hover(
+	speed = 150;
+	$('.post').hover(
 	  function () {
-	    $(".post-title a, .post-content p").removeClass('font-black').addClass('change-to-green');
+			$changeobj = $(".post-title a, .post-content p", this);
+			$line = $('.thumnail-uline', this);
+	    $changeobj.removeClass('font-black').addClass('change-to-green');
 			$line.animate({width: linelength}, speed);
 	  },
 		function() {
-			$(".post-title a, .post-content p").removeClass("change-to-green").addClass('font-black');
+			$changeobj.removeClass("change-to-green").addClass('font-black');
 			$line.animate({width: 0}, speed);
 		}
 	);
 });
+
 
 /* change header */
 $(function() {
