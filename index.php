@@ -13,7 +13,7 @@
 					<a class="permalink" href="<?php the_permalink(); ?>"></a>
 				</div>
 					<?php else: ?>
-						<p>none</p>
+						<p></p>
 					<?php endif; ?>
 					<div class="thumnail-uline"></div>
 				</div>
