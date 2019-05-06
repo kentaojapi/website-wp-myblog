@@ -1,7 +1,7 @@
 	<div id="footer">
 		<div class="container-footer">
 			<div id="about-blog">
-				<h2>Kenta Ojapi Monodukuri Blog.</h2>
+				<h2>Kenta Ojapi Roly-Poly Blog.</h2>
 				<div class="about-border"></div>
 				<p class="explain-me">プログラミング、音楽制作などを行う中で気がついたTipsや考えたことを書いています。</p>
 			</div>
@@ -28,7 +28,7 @@
 				<i class="about-me-icon far fa-envelope"></i>kenta_ozaki@outlook.jp
 			</div>
 			<div id="end-logo">
-			<img class="end-logo-img" src="<?php echo get_template_directory_uri(); ?>/img/footer-logo.png">
+			<img class="end-logo-img" src="<?php echo get_template_directory_uri(); ?>/img/footer-logo-new.png">
 			</div>
 		</div>
 		<div id="copyright">@kentaojapi all rights reserved.</div>

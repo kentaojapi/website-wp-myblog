@@ -2,6 +2,15 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139644506-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-139644506-1');
+	</script>
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 	<link rel="stylesheet", type="text/css", href="<?php echo get_stylesheet_uri(); ?>">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -13,10 +22,19 @@
 		<div class="title-area">
 		<a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/mainlogo-basic.png"></a>
 		</div>
-		<?php wp_nav_menu(); ?>
+		<div class="nav-toggle">
+			<div>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="menu-area">
+			<?php wp_nav_menu(); ?>
+		</div>
 	</div><!-- header -->
 	<div id="header-change" class="container-header-change">
 		<div class="logo-area">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/changelogo-basic.png"></div>
+		<img src="<?php echo get_template_directory_uri(); ?>/img/mainlogo-basic.png"></div>
 	</div><!-- header change -->
 <?php wp_head(); ?>

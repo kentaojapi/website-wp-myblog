@@ -33,3 +33,19 @@ $(function() {
         }
       });
 });
+
+/* for Smartphone  hamburger menu */
+/*$(function() {
+	$('.container').on('click', '.nav-toggle', function() {
+		$('#header').toggleClass('open');
+		$('.menu-area').slideToggle();
+	});
+});
+*/
+
+$(function() {
+	$(".nav-toggle").click(function() {
+		$('#header').toggleClass('open');
+		$('.menu-area').slideToggle();
+	});
+});
