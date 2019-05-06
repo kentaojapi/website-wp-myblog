@@ -35,6 +35,6 @@
 	</div><!-- header -->
 	<div id="header-change" class="container-header-change">
 		<div class="logo-area">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/mainlogo-basic.png"></div>
+		<a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/mainlogo-basic.png"></div></a>
 	</div><!-- header change -->
 <?php wp_head(); ?>

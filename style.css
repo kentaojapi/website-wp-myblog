@@ -35,6 +35,7 @@ time, mark, audio, video {
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		color: #222222;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -76,7 +77,6 @@ a {
 }
 
 p {
-	padding-bottom: 1.5em;
 	margin: 0;
 	line-height: 1.8;
 }
@@ -321,14 +321,14 @@ p {
 }
 
 #posts .post-title h2 {
-	font-size: 24px;
+	font-size: 1.75em;
 	font-weight: bold;
 	margin: 10px 2.5%;
 	text-decoration: none;
 }
 
 #posts .post-title a {
-
+	line-height: 1.8em;
 }
 
 #posts .post-title p {
@@ -393,17 +393,21 @@ p {
 @media screen and (max-width:479px) {
 	#posts {
 		width: 100%;
-	}	
+	}
+
+	#posts .post-title h2 {
+		font-size: 1.4em;
+	}
 }
 /* post-content(single.php) */
 
 .post-content {
-
+		font-family: -apple-system, "Georgia", "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "ヒラギノ角ゴ ProN W"
 }
 
 .post-content p {
-	font-size: 1.20em;
-	font-family: Georgia;
+	font-size: 1.2em;
+	margin: 2.1em 0;
 }
 
 .post-content p strong {
@@ -415,7 +419,7 @@ p {
 	font-size: 1.2em;
 	list-style-type: disc;
 	padding-left: 3em;
-	margin-bottom: 1.5em;
+	margin: 2.1em 0;
 }
 
 .post-content ol >li {
@@ -427,7 +431,7 @@ p {
 	font-size: 1.2em;
 	list-style-type: decimal;
 	padding-left: 3em;
-	margin-bottom: 1.5em;
+	margin: 2.1em 0;
 }
 
 .post-content ul >li {
@@ -437,40 +441,31 @@ p {
 .post-content h1 {
 	font-size: 1.9em;
 	font-weight: bold;
-	margin-bottom: 1.5em;
+	margin-top: 2.3em;
 }
 
 .post-content h2 {
 	font-size: 1.6em;
 	font-weight: bold;
-	margin-bottom: 1.5em;
+	margin-top: 2.3em;
 }
 
 .post-content h3 {
 	font-size: 1.45em;
 	font-weight: bold;
-	margin-bottom: 1.5em;
-}
-
-.post-content ul {
-	display: list-item;
-	font-size: 1.2em;
-	list-style-type: decimal;
-	padding-left: 3em;
-	margin-bottom: 1.5em;
+	margin-top: 2.3em;
 }
 
 .post-content img {
 	display: block;
 	margin: auto;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+	margin: 2.1em 0;
 }
 
 .post-content blockquote {
 	position: relative;
 	padding: 10px 15px 10px 60px;
-	margin-bottom: 1.5em;
+	margin: 2.1em 0;
 	box-sizing: border-box;
 	font-style: italic;
 	background: #efefef; 
@@ -508,13 +503,11 @@ p {
 }
 
 .post-content .code-toolbar {
-	margin: 0px 0px 14px 0px;
-	margin-bottom: 1.5em;
+	margin: 2.1em 0;
 }
 
 .post-content .linkcard {
-	margin-top: 1.5em;
-	margin-bottom: 3em;
+	margin: 2.1em 0;
 }
 
 .post-content .linkcard span, cite, div.lkc-excerpt  {
@@ -528,12 +521,30 @@ p {
 
 .post-content iframe {
 	display: block;
-	margin: auto;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+	margin: 2.1em auto;
 }
 
 @media screen and (max-width:479px) {
+	.post-content p {
+		font-size: 1.1em;
+	}
+
+	.post-content ul {
+		font-size: 1.1em;
+	}
+
+	.post-content ol {
+		font-size: 1.1em;
+	}
+
+	.post-content h2 {
+		font-size: 1.5em;
+	}
+
+	.post-content h3 {
+		font-size: 1.3em;
+	}
+
 	.post-content >p >img {
 		width: 100%;
 		height: auto;
@@ -640,6 +651,14 @@ p {
 	background: black; 
 }
 
+#sidebar .sidebar-myname {
+	margin: 5px 0 10px 0;
+}
+
+#sidebar div.sidebar-myname > a {
+	color: #000000;
+}
+
 #sidebar li a {
 	color: #696969;
 }
@@ -684,7 +703,12 @@ img.sidebar-prof-img {
 
 #about-blog h2 {
 	font-size: 20px;
+	color: #aeaeae;
 	margin: 30px 0px 20px 0px;
+}
+
+#about-blog p {
+	color: #aeaeae;
 }
 
 .about-border {
@@ -701,16 +725,32 @@ img.sidebar-prof-img {
 
 #about-me h2 {
 	font-size: 20px;
+	color: #aeaeae;
 	margin: 30px 0px 20px 0px;
+}
+
+#about-me p {
+	color: #aeaeae;
 }
 
 .sns {
 	padding-bottom: 15px;
 }
 
+.contact-me {
+	margin-bottom: 15px;
+}
 .about-me-icon {
 	font-size: 20px;
+	float: left;
+	color: #aeaeae;
 	padding-right: 5%;
+}
+
+.about-me-icon p {
+	display: block;
+	float: left;
+	color: #aeaeae;
 }
 
 #about-me a {
@@ -732,6 +772,7 @@ img.sidebar-prof-img {
 
 #copyright {
 	clear: both;
+	color: #aeaeae;
 	font-size: 9px;
 	text-align: center;
 	padding: 15px 0;
@@ -766,3 +807,4 @@ img.sidebar-prof-img {
 		margin-top: 30px;
 	}
 }
+

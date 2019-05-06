@@ -1,19 +1,24 @@
 /* change the color of article title */ 
 $(function () {
+	var ua = navigator.userAgent;
 	linelength = $('.thumbnail').width();
 	speed = 150;
-	$('.post').hover(
-	  function () {
-			$changeobj = $(".post-title a, .post-content p", this);
-			$line = $('.thumnail-uline', this);
-	    $changeobj.removeClass('font-black').addClass('change-to-green');
-			$line.animate({width: linelength}, speed);
-	  },
-		function() {
-			$changeobj.removeClass("change-to-green").addClass('font-black');
-			$line.animate({width: 0}, speed);
-		}
-	);
+	if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0) {
+		return;
+	} else {
+		$('.post').hover(
+			function () {
+				$changeobj = $(".post-title a, .post-content p", this);
+				$line = $('.thumnail-uline', this);
+				$changeobj.removeClass('font-black').addClass('change-to-green');
+				$line.animate({width: linelength}, speed);
+			},
+			function() {
+				$changeobj.removeClass("change-to-green").addClass('font-black');
+				$line.animate({width: 0}, speed);
+			}
+		);
+	}
 });
 
 

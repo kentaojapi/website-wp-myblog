@@ -25,7 +25,8 @@
 					<a href="http://works.kentaojapi.info/">Portfolio</a>
 				</div>
 				<p class="contact-me">楽曲制作、Webサイト作成のご相談は以下のアドレスにご相談を下さい。</p>
-				<i class="about-me-icon far fa-envelope"></i>kenta_ozaki@outlook.jp
+				<i class="about-me-icon far fa-envelope"></i>
+				<p>kenta_ozaki@outlook.jp</p>
 			</div>
 			<div id="end-logo">
 			<img class="end-logo-img" src="<?php echo get_template_directory_uri(); ?>/img/footer-logo-new.png">
