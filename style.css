@@ -82,7 +82,7 @@ p {
 }
 
 .container {
-	width: 80%;
+	width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -682,7 +682,6 @@ img.sidebar-prof-img {
 
 /* footer */
 #footer {
-	height: 200px
 	padding: 15px 0;
 	background: #323232;
 	color: #aeaeae;
@@ -690,7 +689,7 @@ img.sidebar-prof-img {
 }
 
 #footer .container-footer {
-	width: 90%;
+	width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
 }
