@@ -1,8 +1,12 @@
 /* change the color of article title */ 
 $(function () {
 	var ua = navigator.userAgent;
-	linelength = $('.thumbnail').width();
 	speed = 150;
+	linelength = $('.thumbnail').width();
+	$(window).resize(function() {
+		linelength = $('.thumbnail').width();
+	});
+
 	if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0) {
 		return;
 	} else {
@@ -20,7 +24,6 @@ $(function () {
 		);
 	}
 });
-
 
 /* change header */
 $(function() {
@@ -40,14 +43,6 @@ $(function() {
 });
 
 /* for Smartphone  hamburger menu */
-/*$(function() {
-	$('.container').on('click', '.nav-toggle', function() {
-		$('#header').toggleClass('open');
-		$('.menu-area').slideToggle();
-	});
-});
-*/
-
 $(function() {
 	$(".nav-toggle").click(function() {
 		$('#header').toggleClass('open');
