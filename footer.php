@@ -28,9 +28,10 @@
 				<i class="about-me-icon far fa-envelope"></i>
 				<p>kenta_ozaki@outlook.jp</p>
 			</div>
-			<div id="end-logo">
-			<img class="end-logo-img" src="<?php echo get_template_directory_uri(); ?>/img/footer-logo-new.png">
-			</div>
+		<div id="end-twit">
+			<h2>Twitter</h2>
+			<div class="about-border"></div>
+			<a class="twitter-timeline" data-width="300" data-height="400" data-theme="dark" href="https://twitter.com/kenta_ojapi?ref_src=twsrc%5Etfw">Tweets by kenta_ojapi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 		<div id="copyright">@kentaojapi all rights reserved.</div>
 		<?php wp_footer(); ?>

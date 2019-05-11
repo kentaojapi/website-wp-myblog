@@ -68,7 +68,7 @@ table {
 body {
 	font-size: 14px;
 	/*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3", Hiragino Kaku Gothic ProN, Arial, "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, sans-serif;*/
-  font-family: Gill Sans,Gill Sans MT,Lato,Calibri,ŸàƒSƒVƒbƒN,YuGothic,hiragino kaku gothic pron,hiragino kaku gothic pro,‚l‚r ƒSƒVƒbƒN,sans-serif;
+  font-family: Gill Sans,Gill Sans MT,Lato,Calibri,"ŸàƒSƒVƒbƒN",YuGothic,hiragino kaku gothic pron,hiragino kaku gothic pro,"‚l‚r ƒSƒVƒbƒN",sans-serif;
 	letter-spacing: .07em;
 }
 
@@ -85,6 +85,12 @@ p {
 	width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+@media screen and (max-width:1199px) {
+	.container {
+		width: auto;
+	}
 }
 
 /* header */
@@ -142,6 +148,16 @@ p {
 
 #header a:hover {
 	color: #000000;
+}
+
+@media screen and (max-width:1199px) { 
+	#header img {
+		margin-left: 5%;
+	}
+
+	#header .menu {
+		margin-left: 5%;
+	}
 }
 
 @media screen and (max-width:479px) {
@@ -390,19 +406,27 @@ p {
 	color: #00a381;
 }
 
+@media screen and (max-width:1199px) {
+	#posts {
+		width: 80%;
+		margin: 0px 10%;
+	}
+}
+
 @media screen and (max-width:479px) {
 	#posts {
 		width: 100%;
+		margin: 0px 0px;
 	}
 
 	#posts .post-title h2 {
 		font-size: 1.4em;
 	}
 }
-/* post-content(single.php) */
 
+/* post-content(single.php) */
 .post-content {
-		font-family: -apple-system, "Georgia", "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W"
+		font-family: -apple-system, "Georgia", "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans"
 }
 
 .post-content p {
@@ -423,7 +447,7 @@ p {
 }
 
 .post-content ol >li {
-
+	padding-bottom: 0.8em;
 }
 
 .post-content ul {
@@ -435,18 +459,22 @@ p {
 }
 
 .post-content ul >li {
-
+	padding-bottom: 0.8em;
 }
 
 .post-content h1 {
 	font-size: 1.9em;
 	font-weight: bold;
+	padding-bottom: 1.0em;
+	border-bottom: medium solid #222222;
 	margin-top: 2.3em;
 }
 
 .post-content h2 {
 	font-size: 1.6em;
 	font-weight: bold;
+	padding-bottom: 1.0em;
+	border-bottom: medium solid #222222;
 	margin-top: 2.3em;
 }
 
@@ -458,8 +486,7 @@ p {
 
 .post-content img {
 	display: block;
-	margin: auto;
-	margin: 2.1em 0;
+	margin: 2.1em auto;
 }
 
 .post-content blockquote {
@@ -522,6 +549,13 @@ p {
 .post-content iframe {
 	display: block;
 	margin: 2.1em auto;
+}
+
+@media screen and (max-width:1199px) {
+	.post-content >p >img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 @media screen and (max-width:479px) {
@@ -674,6 +708,12 @@ img.sidebar-prof-img {
 	padding: 10px 30%;
 }
 
+@media screen and (max-width:1199px) {
+	#sidebar {
+		display: none;
+	}
+}
+
 @media screen and (max-width:479px) {
 	#sidebar {
 		display: none;
@@ -769,12 +809,88 @@ img.sidebar-prof-img {
 	text-align: center;
 }
 
+#end-twit {
+	float: left;
+	width: 30%;
+}
+
+
+#end-twit h2 {
+	font-size: 20px;
+	color: #aeaeae;
+	margin: 30px 0px 20px 0px;
+}
+
+#end-twit p {
+	color: #aeaeae;
+}
+
+#end-twit .about-border {
+	border-top: 3px solid #aeaeae;
+	margin: 15px 0px;
+	width: 100px;
+}
+
+#end-twit .twitter-timeline {
+
+}
+
+.u-floatLeft {
+	display: none;
+}
+
 #copyright {
 	clear: both;
 	color: #aeaeae;
 	font-size: 9px;
 	text-align: center;
 	padding: 15px 0;
+}
+
+@media screen and (max-width:1190px) {
+	#footer .containe-footer {
+		width: 95%;
+	}
+
+	#about-blog {
+		clear: both;
+		margin-left: 5%;
+	}
+
+	#about-me {
+		clear: both;
+		margin-left: 5%;
+	}
+
+	#end-logo {
+		clear: both;
+		margin-left: 5%;
+	}
+	
+	#end-twit {
+		clear: both;
+		margin-left: 5%;
+	}
+}
+
+@media screen and (max-width:1199px) {
+	#footer .container-footer {
+		width: 95%;
+	}
+
+	#footer #about-blog {
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	#footer #about-me {
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	#end-twit {
+		display: none;
+	}
 }
 
 @media screen and (max-width:479px) {
@@ -799,6 +915,10 @@ img.sidebar-prof-img {
 	}
 	
 	#end-logo .end-logo-img {
+		display: none;
+	}
+
+	#footer #end-twit {
 		display: none;
 	}
 
