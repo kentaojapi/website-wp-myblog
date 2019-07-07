@@ -15,7 +15,14 @@
 	<link rel="stylesheet", type="text/css", href="<?php echo get_stylesheet_uri(); ?>">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/motions.js' ?>"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/motions.js' ?>"></script>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+    		google_ad_client: "ca-pub-8148919590181490",
+		    enable_page_level_ads: true
+			  });
+	</script>
 </head>
 <body>
 	<div id="header" class="container">

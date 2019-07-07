@@ -20,10 +20,11 @@
 					</h2>
 				</div>
 				<div class="post-meta">
+					<i class="far fa-clock"></i>
 					<?php echo get_the_date(); ?>
 				</div>
 				<div class="post-category">
-					<i class="fas fa-tags"></i>
+					<i class="fas fa-flag"></i>
 					<?php the_category(', '); ?>
 				</div>
 				<div class="post-content">
