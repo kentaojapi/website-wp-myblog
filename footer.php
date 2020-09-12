@@ -3,7 +3,7 @@
 			<div id="about-blog">
 				<h2>Kenta Ojapi Roly-Poly Blog.</h2>
 				<div class="about-border"></div>
-				<p class="explain-me">プログラミング、音楽制作などを行う中で気がついたTipsや考えたことを書いています。</p>
+				<p class="explain-me">音楽やITエンジニアリングや社会の話など</p>
 			</div>
 			<div id="about-me">
 				<h2>About me.</h2>
@@ -24,7 +24,7 @@
 					<i class="about-me-icon fas fa-globe"></i>
 					<a href="http://works.kentaojapi.info/">Portfolio</a>
 				</div>
-				<p class="contact-me">楽曲制作、Webサイト作成のご相談は以下のアドレスにご相談を下さい。</p>
+				<p class="contact-me">ご連絡は以下よりお願いします。</p>
 				<i class="about-me-icon far fa-envelope"></i>
 				<p>kenta_ozaki@outlook.jp</p>
 			</div>
