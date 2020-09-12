@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@kenta_ojapi">
+	<meta property="og:image" content= "https://kentaojapi.info/wp-content/themes/kentaojapi-info/img/mainlogo-basic.png">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139644506-1"></script>
 	<script>
@@ -17,12 +20,7 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/motions.js' ?>"></script>
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({
-    		google_ad_client: "ca-pub-8148919590181490",
-		    enable_page_level_ads: true
-			  });
-	</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
 	<div id="header" class="container">
